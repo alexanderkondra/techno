@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
-    <title>Appointment</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>To book an appointment, please fill the following form below:</h1>
-      <div>
-        <form id="formOne">
-          <div class="form-group">
-            <label for="person1">Name</label>
-            <input id="person1" class="form-control" type="text">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+  <title>Appointment</title>
+</head>
+<body>
+  <div class="container">
+    <h1>To book an appointment, please fill the following form below:</h1>
+    <div>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="person1">Name</label>
+          <input id="person1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="person2">Description</label>
+          <input id="person2" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input id="date" class="form-control" type="date">
+        </div>
+        <div class="form-group">
+          <label for="exclamation">Time</label>
+          <input id="exclamation" class="form-control" type="text">
+        </div>
+
+
+        <button id="myBtn">Book Appointment</button>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>You're appointment has been booked!</p>
           </div>
-          <div class="form-group">
-            <label for="person2">Description</label>
-            <input id="person2" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="date">Date:</label>
-            <input id="date" class="form-control" type="date">
-          </div>
-          <div class="form-group">
-            <label for="exclamation">Time</label>
-            <input id="exclamation" class="form-control" type="text">
-          </div>
-          <button type="submit" class="btn">Book Appointnent</button>
-        </form>
+        </div>
+
+      </form>
     </div>
   </body>
   </html>
